@@ -1,0 +1,44 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3" style="background-color:lavender;">
+      <div class="form-group">
+        <label for="train_no">Enter Train Number:</label>
+        <input type="text" (keydown.enter)="onKeydown($event)" class="form-control" id="train_no" name="train_no" [(ngModel)]="trainNo" placeholder="name">
+        {{trainNo}}
+      </div>
+    </div>
+    <div class="col-sm-3" style="background-color:lavenderblush;"></div>
+    <div class="col-sm-3" style="background-color:lavender;"></div>
+    <div class="col-sm-3" style="background-color:lavenderblush;"></div>
+  </div>
+</div>
+
+
+
+<!--
+<div class="container">
+  <form>
+    <div class="form-group search-bar">
+
+      <input type="text" class="form-control" placeholder="Search..." #searchBox (input)="search(searchBox.value)">
+
+
+      <div class="loader" *ngIf="loading">
+        <div class="c-three-dots-loader"></div>
+      </div>
+    </div>
+
+
+    <div class="list-group">
+      <div class="list-group-item list-group-item-action" *ngFor="let country of countries$ | async">
+        <div class="media">
+          <img src="{{country.flag}}" class="mr-2" alt="...">
+          <div class="media-body">
+            <p class="mt-0">{{ country.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+-->
