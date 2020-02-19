@@ -91,11 +91,6 @@ respData = {
       };
 
 
-
-
-
-
-
 constructor(private httpClient: HttpClient) { }
 
 /*public sendGetRequest(trainNo: string): Observable<Resp> {
